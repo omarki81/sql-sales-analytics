@@ -1,0 +1,54 @@
+INSERT INTO customers (first_name, last_name, email, city, country, signup_date) VALUES
+('Ahmed','Ben Ali','ahmed.benali@gmail.com','Tunis','Tunisia','2023-01-10'),
+('Sarah','Martin','sarah.martin@gmail.com','Paris','France','2023-02-15'),
+('Youssef','Trabelsi','youssef.trabelsi@gmail.com','Sfax','Tunisia','2023-03-05'),
+('Lina','Dupont','lina.dupont@gmail.com','Lyon','France','2023-03-20'),
+('Omar','Haddad','omar.haddad@gmail.com','Marseille','France','2023-04-01'),
+('Nour','Khalil','nour.khalil@gmail.com','Tunis','Tunisia','2023-04-18'),
+('Karim','Bensaid','karim.bensaid@gmail.com','Casablanca','Morocco','2023-05-02'),
+('Emma','Robert','emma.robert@gmail.com','Bordeaux','France','2023-05-10');
+
+INSERT INTO products (product_name, category, price, cost) VALUES
+('Laptop Pro 14','Electronics',1500,1100),
+('Wireless Headphones','Electronics',200,120),
+('Office Chair','Furniture',350,220),
+('Standing Desk','Furniture',600,420),
+('Smartphone X','Electronics',900,650),
+('Monitor 27"','Electronics',400,300);
+
+INSERT INTO orders (customer_id, order_date, order_status) VALUES
+(1,'2023-05-01','Completed'),
+(2,'2023-05-03','Completed'),
+(3,'2023-05-10','Completed'),
+(1,'2023-06-02','Completed'),
+(4,'2023-06-15','Cancelled'),
+(5,'2023-07-01','Completed'),
+(6,'2023-07-05','Completed'),
+(2,'2023-07-20','Completed'),
+(7,'2023-08-01','Completed'),
+(8,'2023-08-15','Completed');
+
+INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES
+(1,1,1,1500),
+(1,2,2,200),
+(2,5,1,900),
+(3,3,1,350),
+(4,6,2,400),
+(5,4,1,600),
+(6,1,1,1500),
+(6,2,1,200),
+(7,5,1,900),
+(8,3,2,350),
+(9,6,1,400),
+(10,2,3,200);
+
+INSERT INTO payments (order_id, payment_method, payment_date, amount) VALUES
+(1,'Credit Card','2023-05-01',1900),
+(2,'PayPal','2023-05-03',900),
+(3,'Credit Card','2023-05-10',350),
+(4,'Bank Transfer','2023-06-02',800),
+(6,'Credit Card','2023-07-01',1700),
+(7,'PayPal','2023-07-05',900),
+(8,'Credit Card','2023-07-20',700),
+(9,'Bank Transfer','2023-08-01',400),
+(10,'Credit Card','2023-08-15',600);
